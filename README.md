@@ -1,15 +1,15 @@
 # empleateya-lms
 Configuración
 
-# Instalar XAMPP:
+## Instalar XAMPP:
 https://www.apachefriends.org/es/index.html
 
-# Instalar Composer
+## Instalar Composer
 * Abrir GitBash
 * Ir a la carpeta cd c://xamp/htdocs
 * Ejecutar el comando: composer global require laravel/installer
 
-# Crear un dominio local para nuestro proyecto:
+## Crear un dominio local para nuestro proyecto:
 * Abrir bloc de notas como administrador
 * Archivo -> abrir 
 * ubicar la ruta C:\Windows\System32\drivers\etc
@@ -38,17 +38,17 @@ https://www.apachefriends.org/es/index.html
 		</Directory>
 	</VirtualHost>
 
-# Cargar las dependencias de Laravel:
+## Cargar las dependencias de Laravel:
 * Abrir la la terminal en VSCODE (CTRL + ñ) en la ruta del proyecto
 * Ejecutar el comando: 
 composer install
 
-# Cargar las dependendencias de NodeJS:
+## Cargar las dependendencias de NodeJS:
 * Abrir la la terminal en VSCODE (CTRL + ñ) en la ruta del proyecto
 * Ejecutar el comando: 
 npm install
 
-# Configurar la conexion a la base de datos
+## Configurar la conexion a la base de datos
 * Creamos una base de datos: empleateya_lms
 * Copiamos el archivo .env.example y lo renombramos como: .env 
 * Dentro del archivo .env, cambiar la APP_URL por la URL del proyecto 
@@ -57,5 +57,5 @@ npm install
 * Ir al servidor local, y en la carpeta public generar el acceso directo a la carpeta storage :
 	php artisan storage:link
   
- # Ejecutar las migraciones:
+## Ejecutar las migraciones:
 * php artisan migrate:fresh --seed 
